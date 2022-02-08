@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 tag=$(git describe --exact-match --tags $(git log -n1 --pretty='%h'))
 ref=$(echo $GITHUB_REF | sed 's/refs\/tags\///g')
