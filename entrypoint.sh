@@ -3,6 +3,7 @@
 echo $GITHUB_REF
 TAG=$(echo $GITHUB_REF | sed 's/refs\/tags\///g')
 GITTAG=$(git describe --exact-match --tags $(git log -n1 --pretty='%h'))
+echo $(ls -lha)
 echo $GITTAG
 echo $TAG
 if [ -z "$TAG" ]; then
