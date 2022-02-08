@@ -1,4 +1,4 @@
-name: 'Get tag or SHA'
+name: 'Get tag with SHA fallback'
 description: 'Returns the tag (if available) Gets the release name if it exists otherwise returns the commit id'
 author: Aaron C. de Bruyn <aaron@heyaaron.com>
 branding:
