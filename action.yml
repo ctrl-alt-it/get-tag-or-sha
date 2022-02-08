@@ -1,0 +1,12 @@
+name: 'Get tag or SHA'
+description: 'Returns the tag (if available) Gets the release name if it exists otherwise returns the commit id'
+author: Aaron C. de Bruyn <aaron@heyaaron.com>
+branding:
+  icon: check-circle
+  color: blue
+outputs:
+  tag:
+    description: 'Get the tag of a commit with fallback to SHA'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
