@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: ctrl-alt-it/get-tag-or-sha/get-tag-or-sha@v1
+      - uses: ctrl-alt-it/get-tag-or-sha@v1
         id: tag
 
       - name: Build
