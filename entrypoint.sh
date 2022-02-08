@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
-tag=$(git describe --exact-match --tags $(git log -n1 --pretty='%h'))
-ref=$(echo $GITHUB_REF | sed 's/refs\/tags\///g')
+tag=$(echo $GITHUB_REF | sed 's/refs\/tags\///g')
+if [ -z "$tag" ] then
+  tag = $GITHUB_SHA
+fi
 echo "::set-output name=tag::$tag"
-echo "::set-output name=tag::$ref"
